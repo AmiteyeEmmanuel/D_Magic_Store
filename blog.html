@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css style shit -->
+    <link rel="stylesheet" href="css/shop.css">
+    <title>D_MAGIC_STORE</title>
+
+    <!-- icons Css -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Swiper.js-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"> <img src="images/DMS 1.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="shop.html"> Shop</a></li>
+                <li><a class="active" href="blog.html"> Blog</a></li>
+                <li><a href="about.html"> About</a></li>
+                <li><a href="contact.html"> Contact</a></li>
+                <li> <a href="#"> Account <i class="uil uil-list-ul"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="Sign-Up.html">Sign-up</a></li>
+                            <li><a href="sign-in.html">Sign-in</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="#" id="close"> <i class="uil uil-times"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <i id="bar" class="uil uil-bars"></i>
+        </div>
+
+        <div class="cart">
+            <button type="button" id="cart-btn">
+                <i class="uil uil-shopping-cart-alt"></i>
+                <span id="cart-count-info">0</span>
+            </button>
+            <div class="cart-container">
+                <div class="cart-list">
+                    <!-- single item -->
+                    <!-- <div class="cart-item">
+                        <img src="images/products/p1/1.jpg" alt="">
+                        <div class="cart-item-info">
+                            <h3 class="cart-item-name">Vintage</h3>
+                            <span class="cart-item-category"> shirt</span>
+                            <span class="cart-item-price">11,000</span>
+                        </div>
+                        <button type="button" class="cart-item-del-btn">
+                            <i class="uil uil-times-circle"></i>
+                        </button>
+                    </div> -->
+                    <!-- end of single items -->
+                </div>
+
+                <div class="cart-total">
+                    <h3>total: N</h3>
+                    <span id="cart-total-value"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="page-header" class="blog-header">
+        <h2> The simpler, the better </h2>
+        <p> Read all case study about our products.</p>
+    </section>
+
+    <section id="blog">
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/Home3.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4> The African-Culture fashion. </h4>
+                <p> KickStart your day, with our african culture outfit. Trending african outfits that will suit your day.</p>
+                <a href="#"> READ MORE</a>
+            </div>
+            <h1> THE_AFRICAN_CULTURE.</h1>
+        </div>
+
+        <div class="blog-box">
+            <div class="blog-details">
+                <h4> The Classic-Men fashion. </h4>
+                <p> Men classy outfit, that will boost your self-esteem. Trending <br>classic outfits with astonishing look for the day.</p>
+                <a href="#"> READ MORE</a>
+            </div>
+            <h1> THE_CLASSIC_MEN.</h1>
+            <div class="blog-img">
+                <img src="images/blog/b2.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b5.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4> The_Women_Fashion . </h4>
+                <p> Amazing how your woman can look beautiful and wonderful with the right sense and combination of fashion, give your amazing woman the best fashion .</p>
+                <a href="#"> READ MORE</a>
+            </div>
+            <h1> THE_FASHION_WOMEN.</h1>
+        </div>
+
+        <div class="blog-box">
+            <div class="blog-details">
+                <h4> The Accessory Box</h4>
+                <p> Spice up your Look and outfits with the right and suitable accessories, brighten your outfit with the right accessory box.</p>
+                <a href="#"> READ MORE</a>
+            </div>
+            <h1> ACCESSORIES_BOX.</h1>
+            <div class="blog-img">
+                <img src="images/blog/b6.jpeg" alt="">
+            </div>
+        </div>
+
+        <div class="blog-box">
+            <div class="blog-img">
+                <img src="images/blog/b7.jpg" alt="">
+            </div>
+            <div class="blog-details">
+                <h4> Models in John Anthony's Fall 1976 Collection. </h4>
+                <p>Description: Models, including (from left) Melanie Cain, Beverly Johnson, Lisa Cooper, Pat Cleveland, and Chris Royer, wearing ensembles from John Anthony for Fall 1976.</p>
+                <a href="#"> READ MORE</a>
+            </div>
+            <h1> MODEL_IN_JOHN_ANTHONY'S.</h1>
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4> Sign Up For Newsletter</h4>
+            <p> Get Email updates about latest outfits and <span>special offers. </span>
+            </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder=" Email address">
+            <button class="normal"> Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1 footer">
+        <div class="col">
+            <img src="images/DMS.png" class="logo1" alt="">
+            <h4>Contact Us</h4>
+            <p><strong>Address: </strong>Ikeja, Lagos </p>
+            <p><strong> Phone:</strong> +234_7083302397/ (234)-9157475764</p>
+            <p><strong> Working Hours:</strong> 9:00-6:00 WAT, Mon-Sat</p>
+            <div class="follow">
+                <h4> Follow-us</h4>
+                <div class="icon">
+                    <i class="uil uil-facebook  uli1"></i>
+                    <i class="uil uil-instagram-alt  uli2"></i>
+                    <i class="uil uil-twitter  uli3"></i>
+                    <i class="uil uil-youtube  uli4"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#"> About-us</a>
+            <a href="#"> Delivery Information</a>
+            <a href="#"> Privacy and Policy</a>
+            <a href="#"> Terms & Conditions </a>
+            <a href="#"> Contact-Us</a>
+        </div>
+
+        <div class="col">
+            <h4>Account</h4>
+            <a href="#"> Sign Inc</a>
+            <a href="#"> View Cart</a>
+            <a href="#"> My WishList</a>
+            <a href="#"> Track My Order</a>
+            <a href="#"> Help</a>
+        </div>
+
+
+        <div class="col install">
+            <h4>Install app</h4>
+            <p>From App store or Google play</p>
+            <div class="row">
+                <button type="button"><i class="uil uil-apple"></i> Download</button>
+                <button type="button"> <i class="uil uil-google-play"></i>Download</button>
+            </div>
+            <p>Secured Payment Gateway</p>
+            <img src="images/Payment.jpg" alt="">
+        </div>
+    </footer>
+    <div class="copyright">
+        <p> Copyright@Amiteye Emmanuel, 2021</p>
+    </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
