@@ -480,7 +480,7 @@ footer .install .row button:hover {
 
 #form-details {
     display: flex;
-    background-color: rgb(32, 36, 56);
+    background-color: rgb(30, 31, 33);
     justify-content: space-between;
     margin: 30px 20px;
     padding: 80px 150px;
