@@ -6,25 +6,56 @@ const change = document.getElementById('first');
 
 
 // // Hero Animation slider
-var slideImg = document.getElementById('slideImg');
-var images = new Array(
-    "images/Home3.jpg",
-    "images/Home2.jpg",
-    "images/Home1.jpg",
-    "images/Hero5.jpg"
-);
+// var slideImg = document.getElementById('slideImg');
+// var images = new Array(
+//     "images/Home3.jpg",
+//     "images/Home22.jpg",
+//     "images/Home1.jpg",
+//     "images/Hero5.jpg"
+// );
 
-var len = images.length;
-var i = 0;
+// var len = images.length;
+// var i = 0;
 
-function slider() {
-    if (i > len - 1) {
-        i = 0;
-    }
-    slideImg.src = images[i];
-    i++;
-    setTimeout('slider()', 4000);
+// function slider() {
+//     if (i > len - 1) {
+//         i = 0;
+//     }
+//     slideImg.src = images[i];
+//     i++;
+//     setTimeout('slider()', 4000);
+// }
+
+//Javascript for video slider_navigation
+const btns = document.querySelectorAll(".nav-btn");
+const slides = document.querySelectorAll(".video-slide");
+const contents = document.querySelectorAll(".content");
+
+var sliderNav = function(manual) {
+    btns.forEach((btn) => {
+        btn.classList.remove("active")
+    })
+
+    slides.forEach((slide) => {
+        slide.classList.remove("active")
+    })
+
+    contents.forEach((content) => {
+        content.classList.remove("active")
+    })
+
+    btns[manual].classList.add("active");
+    slides[manual].classList.add("active");
+    contents[manual].classList.add("active");
+
 }
+
+btns.forEach((btn, i)=> {
+    btn.addEventListener("click", () => {
+        sliderNav(i);
+    });
+});
+
 
 
 //navbar
@@ -47,11 +78,6 @@ var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
     speed: 2500,
-
-    // pagination: {
-    //   el: ".swiper-pagination",
-    //   clickable: true,
-    // },
 
     autoplay: {
         delay: 1000,
